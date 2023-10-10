@@ -5,7 +5,7 @@ pm.test("Status code is 200", function () {
 
 //Check if Pantry API path variable is used in the URL
 pm.test("Pantry API path variable used", function () {
-    pm.expect(String(pm.request.url)).to.include(pm.variables.get("pantry_api_path"));
+    pm.expect(String(pm.request.url)).to.include(pm.variables.get("URL"));
 });
 
 //Check if Pantry ID variable is used in the URL
